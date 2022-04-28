@@ -1,0 +1,58 @@
+@import "./utils/variables";
+@import "./components/body";
+@import "./utils/_placeholders";
+@import "./utils/_mixins";
+@import "./utils/breackpoints";
+
+// --------------------header--------------------
+@import "./components/page-header";
+@import "./components/_nav";
+@import "./components/_logo";
+@import "./components/contact";
+
+// --------------------main--------------------
+
+// hero
+@import "./components/_hero";
+@import "./components/hero-button";
+
+// benefits
+@import "./components/benefits";
+
+// work
+@import "./components/work";
+
+// team
+@import "./components/team";
+@import "./components/team-social";
+
+// clients
+@import "./components/clients";
+
+// --------------------footer--------------------
+
+@import "./components/footer";
+@import "./components/footer-logo";
+@import "./components/footer-address";
+@import "./components/footer-social";
+@import "./components/_footer-form";
+@import "./components/footer-button";
+
+// --------------------modal--------------------
+
+@import "./components/_modal";
+@import "./components/modal-close-button";
+@import "./components/_modal-title";
+@import "./components/_modal-date";
+@import "./components/_modal-coment";
+@import "./components/_modal-chekbox";
+@import "./components/_modal-button";
+
+// --------------------Portfolio--------------------
+
+
+@import "./components/_portfolio-button";
+
+// portfolio content
+
+@import "./components/portfolio-content"

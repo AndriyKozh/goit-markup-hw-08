@@ -1,0 +1,45 @@
+.works{
+	@media (max-width: 1199px) {
+		display: none;
+	}}
+
+
+
+.work {
+	padding-top: 0;
+	
+}
+
+.work__content {
+	display: flex;
+}
+
+.work__item {
+	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.work__icon {
+	position: relative;
+
+	.work__text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		bottom: 0;
+		width: 100%;
+		height: 70px;
+		text-transform: uppercase;
+
+		color: $color-text;
+		background: rgba(47, 48, 58, 0.8);
+	}
+}
