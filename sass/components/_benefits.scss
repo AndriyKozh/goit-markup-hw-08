@@ -293,8 +293,6 @@
 
 @media screen and (min-width: 1200px){
 		display: flex;
-		padding-top: 94px;
-		padding-bottom: 94px;
 		.benefits__item{
 			margin-bottom: 0;
 		}
@@ -309,9 +307,4 @@
 		}
 	}
 
-}
-@media screen and (max-width: 1199px) {
-	.benefits {
-		margin-top: 60px;
-	}
 }

@@ -1,7 +1,13 @@
 .footer__logo {
 	margin-right: 0;
-}
+
 
 .footer__logo-text {
 	color: $color-text;
+}
+
+@media screen and (max-width: 1199px) {
+	width: 100%;
+		text-align: center;
+	}
 }

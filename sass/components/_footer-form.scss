@@ -1,0 +1,46 @@
+	.form__email{
+		display: flex;
+		height: 50px;
+		background-color: #2f303a;
+		border: 1px solid #757575 ;
+		margin-right: 12px;
+		color: $color-text;
+		@include transition(border);
+	border-radius: 4px;
+		outline: 0px;
+		&:hover,
+		&:focus{
+			border: 1px solid $accent-color;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		
+
+		.form__email{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px){
+		.form__email{
+				width: 450px;
+				margin-left: auto;
+			margin-right: auto;
+		margin-bottom: 20px;
+		}
+		
+	}
+@media screen and (min-width: 1200px) {
+.footer__form {
+	margin-left: auto;
+}
+.js-speaker-form {
+	display: flex;
+}
+.form__email{
+	width: 358px;
+}
+}

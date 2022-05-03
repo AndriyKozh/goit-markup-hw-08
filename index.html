@@ -21,14 +21,48 @@
 	<header class="page-header">
 		<div class="container line-up">
 			<!-- Nav -->
+			
 		<nav class="page-header__nav">
 		<a class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
+	
 		<ul class="site-nav">
 			<li class="site-nav__item"> <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a> </li>
 			<li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
 			<li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
 		</ul>
+		
 	</nav>
+
+
+	<button class="mobail__button is-open" type="button"
+		aria-expanded="false"
+		aria-controls="mobail__conteiner"
+		data-menu-button>
+			<svg  width="18" height="18" aria-label="перемикач мобільного меню">
+				<use class="mobail__close" href="./images/x-mobail.svg#icon-close_24px" ></use>
+				<use class="mobail__burger" href="./images/burger.svg#icon-menu_24px"></use>
+			</svg>
+		</button>
+	<div class="mobail__conteiner is-open" id="mobail__conteiner" data-menu>
+<h1>Контент меню</h1>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Contakt -->
 
@@ -108,7 +142,7 @@
 
 		<!--Чим ми заніиаємось-->
 		
-		<section class="section">
+		<section>
 			<div class="works container">
 				<h2 class="section-title">Чем мы занимаемся</h2>
 				<ul class="work__content" >
@@ -143,7 +177,7 @@
 			
 				<ul class="team">
 						<li class="team__item list">
-								<img src="./images/img(3).jpg" alt="Product Designer" width="270" height="260">
+								<img src="./images/img(3).jpg" alt="Product Designer">
 							<div class="team__block">
 									<h3 class="team__title">Игорь Демьяненко</h3>
 									<p class="team__text">Product Designer</p>
@@ -182,7 +216,7 @@
 					
 
 						<li class="team__item list">
-									<img src="./images/img(4).jpg" alt="Frontend Developer" width="270" height="260">
+									<img src="./images/img(4).jpg" alt="Frontend Developer">
 							<div class="team__block">
 									<h3 class="team__title">Ольга Репина</h3> 
 									<p class="team__text">Frontend Developer</p>
@@ -222,7 +256,7 @@
 
 
 						<li class="team__item list">
-									<img src="./images/img(5).jpg" alt="Marketing" width="270" height="260">
+									<img src="./images/img(5).jpg" alt="Marketing">
 									<div class="team__block"><h3 class="team__title">Николай Тарасов</h3>
 									<p class="team__text">Marketing</p>
 								<ul class="social__block">
@@ -261,7 +295,7 @@
 
 
 						<li class="team__item list">
-										<img src="./images/img(6).jpg" alt="UI Designer" width="270" height="260">
+										<img src="./images/img(6).jpg" alt="UI Designer">
 							<div class="team__block"><h3 class="team__title">Михаил Ермаков</h3> 
 											<p class="team__text">UI Designer</p>
 								<ul class="social__block">
@@ -313,7 +347,7 @@
 <h2 class="section-title">Постоянные клиенты</h2>
 <ul class="clients__content">
 		<li class="clients__item">
-			<a href="#" class="clients__link img__center">
+			<a href="#" class="clients__link">
 				<svg class="clients__icon" width="106" height="60">
 					<use href="./images/symbol-defs.svg#icon-Logo">
 
@@ -374,6 +408,7 @@
 			
 			<footer class="footer">
 				<div class="container">
+					<div class="footer__tablet">
 		<div class="footer__info">
 				<a class="logo footer__logo" href="#">Web<span class="footer__logo-text">Studio</span></a>
 		
@@ -416,7 +451,7 @@
 					</a></li>
 				</ul>
 			</div>
-
+</div>
 <!-- Footer form -->
 
 			<div class="footer__form">

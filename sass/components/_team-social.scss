@@ -1,0 +1,43 @@
+.social__block{
+	@include img__center();
+	padding: 0;
+
+}
+
+.social__item{
+	margin-right: 10px;
+	list-style: none;
+	&:last-child{
+		margin-right: 0;
+	}
+	}
+
+	.social__link{
+		@include img__center();
+		padding: 0;
+		border: 0;
+		width: 44px;
+		height: 44px;
+	margin-right: 10px;
+	border-radius: 50%;
+	@include transition(background-color);
+
+
+	&:last-child{
+		margin-right: 0;
+	}
+	&:hover,
+	&:focus{
+		background-color: $accent-color;
+	}
+	&:hover .social__icon,
+	&:focus .social__icon{
+		fill: $color-text
+	}
+}
+
+	.social__icon{
+		fill: #AFB1B8;
+		padding: auto;	
+		@include transition(fill)
+		}
