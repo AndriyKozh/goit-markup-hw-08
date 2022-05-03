@@ -1,0 +1,53 @@
+.modal__check {
+	@include img__center;
+		@media screen and (max-width: 1199px) {
+			font-size: 12px;
+		}
+		font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+	color: $color-fone;
+}
+
+.modal__checkbox {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	&:checked+.modal__checkbox-icon {
+		border-color: $accent-color;
+		background-color: $accent-color;
+		background-image: url("../images/full-check.svg");
+		background-size: contain;
+		background-origin: border-box;
+	}
+
+	cursor: pointer;
+}
+
+.modal__form-input input[type="checkbox"] {
+	width: 16px;
+	height: 15px;
+}
+
+
+.modal__link {
+	@media screen and (max-width: 1199px) {
+		font-size: 12px;}
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	text-decoration-line: underline;
+	color: $accent-color;
+}
+
+.modal__checkbox-icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #000;
+	border-radius: 4px;
+	margin-right: 7px;
+}
+
