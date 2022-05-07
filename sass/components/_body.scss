@@ -3,3 +3,7 @@ body {
 	color: $accent-color-text;
 
 }
+
+body.modal-open {
+	overflow: hidden;
+}
