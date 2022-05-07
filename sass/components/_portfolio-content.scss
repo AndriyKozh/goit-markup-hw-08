@@ -1,28 +1,33 @@
 .conteiner {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	margin:0 -15px ;
+	// justify-content: space-between;
 	padding-bottom: 94px;
 	padding-top: 50px;
 }
 
 .conteiner__item {
-	margin-bottom: 30px;
+	@media screen and (max-width: 767px){
+		width: 450px;
+	}
+	margin: 15px;
+	// margin-bottom: 30px;
 	background: #ffffff;
 	list-style: none;
 	text-decoration: none;
 
-	&:nth-child(7) {
-		margin-bottom: 0;
-	}
+	// &:nth-child(7) {
+	// 	margin-bottom: 0;
+	// }
 
-	&:nth-child(8) {
-		margin-bottom: 0;
-	}
+	// &:nth-child(8) {
+	// 	margin-bottom: 0;
+	// }
 
-	&:nth-child(9) {
-		margin-bottom: 0;
-	}
+	// &:nth-child(9) {
+	// 	margin-bottom: 0;
+	// }
 }
 
 .conteiner__link {
@@ -100,3 +105,4 @@
 	opacity: 0;
 
 }
+

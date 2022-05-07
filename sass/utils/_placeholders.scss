@@ -94,3 +94,17 @@
 		text-align: center;
 		letter-spacing: 0.03em;
 	  }
+
+		.mobail__link {
+		  	&.mobail__item--active {
+		  		color: $accent-color;
+		  	}
+			&:hover,
+			&:focus{
+			color: $accent-color;
+		}
+		}
+
+				header.page-header {
+					position: fixed;
+				}

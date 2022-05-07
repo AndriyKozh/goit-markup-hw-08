@@ -1,14 +1,28 @@
 .mobail__button {
-	
-	margin-left: auto;
+	@media (min-width: 768px) {
+		display: none;
+	}
+	width: 40px;
+	height: 40px;
+
+	position: fixed;
+	z-index: 999;
+	right: 15px;
+	top: 10px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	background-color: transparent;
 	border: none;
 	padding: 0;
-	
+	&:hover{
+		fill: $accent-color;
+	}
+	&:focus{
+		fill: $accent-color;
+	}
 }
+
 
 .mobail__button .mobail__burger{
 	display: none;
@@ -23,16 +37,23 @@
 	display: none;
 }
 
+
 .page-header{
 	position: relative;
 }
 
 .mobail__conteiner{
-	display: block;
-	position: absolute;
+	@media (min-width: 768px) {
+		display: none;
+	}
+	z-index: 998;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	padding: 48px 40px;
 	width: 100%;
-	height: 600px;
-	top: 100%;
+	height: 100%;
+	top: 0;
 	left: 0;
 	background: #FFFFFF;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
@@ -41,16 +62,81 @@
 	&.is-open {
 		display: none;
 	}
+	overflow: hidden;
 }
 
-.mobail__button{
-	@media (min-width: 768px) {
-		display: none;
-	}
+
+
+.mobail__link{
+	color: $accent-color-text;
+}
+
+.mobail__list {
+flex-grow: 1;
+display: block;
+}
+
+.mobail__item {
+	margin-bottom: 32px;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
+}
+
+.mobail__item:last-child{
+	margin-bottom: 0;
+}
+
+.mobail-contact{
+	display: block;
+}
+
+.mobail-contact_item {
+margin-bottom: 32px;
+}
+
+.mobail-contact_item:last-child{
+	margin-bottom: 64px;
+}
+
+.mobail-contact__link-phone {
+	
+	font-weight: 500;
+	font-size: 34px;
+	line-height: 40px;	
+	letter-spacing: 0.02em;
+	color: $accent-color;
+}
+
+.mobail-contact__link-mail{
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.02em;
+	color: $color-fone;
+}
+
+.mobail-soc {
+	display: flex;
+	width: 100%;
+	justify-content: start;
+	text-align: center;
 	
 }
 
-.mobail__conteiner {
-	@media (min-width: 768px) {
-		display: none;
-	}}
+.mobail-soc__link {
+	font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		color: $accent-color;
+}
+
+.mobail-soc__line {
+	padding: 0 10px 0 10px;
+	color: $accent-color-text;
+}
+.page-header {
+	position: fixed;
+}
