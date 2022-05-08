@@ -1,11 +1,12 @@
 .hero {
+	margin: 0 auto;
 	max-width: 1600px;
 	@media screen and (min-width: 480px) {
 	margin-top: 0;
 	}
 
-		@media screen and (min-width: 1199px) {
-			margin-top: 60;
+		@media screen and (min-width: 768px) {
+			margin-top: 80px;
 		}
 
 	// @media  and (max-width:1199) {
@@ -46,7 +47,8 @@
 			line-height: 1.61;
 		}
   }
- @media screen and (max-width: 1199px) {
+ @media screen and (max-width: 767px) {
+	 margin-top: 60px;
 	 padding-top: 118px;
 	 padding-bottom: 118px;
  }

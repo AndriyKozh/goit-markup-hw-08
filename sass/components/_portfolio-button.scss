@@ -3,15 +3,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: start;
-		padding-top: 60px;
 	}
 		@media screen and (max-width: 1199px) {
 			display: flex;
-			padding-top: 60px;
+			padding-top: 120px;
 		}
 	display: flex;
 	justify-content: center;
-	padding-top: 94px;
+	padding-top: 174px;
 }
 
 .menu__item {

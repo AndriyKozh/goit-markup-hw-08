@@ -64,7 +64,8 @@
 	  }
 	
 	  .site-nav__link--active::after{
-  		position: absolute;
+		@media screen and (min-width: 768px){
+				position: absolute;
 		content: "";
 		display: block; 
 		width: 100%;
@@ -73,6 +74,8 @@
 	border-radius: 2px;
 		bottom: -12px;
 		left: 0;
+		}
+  	
 	  }
 	
 	  .visually__hidden {
@@ -95,16 +98,22 @@
 		letter-spacing: 0.03em;
 	  }
 
-		.mobail__link {
-		  	&.mobail__item--active {
-		  		color: $accent-color;
-		  	}
+	  @media screen and (max-width: 767px) {
+		.mobail__link{
+			color: $accent-color-text;
 			&:hover,
 			&:focus{
 			color: $accent-color;
-		}
-		}
+			}
+		} 
+		  
+	  }
 
-				header.page-header {
-					position: fixed;
-				}
+		header.page-header {
+			position: fixed;
+		}
+		
+		.mobail__link--active{
+			color: $accent-color;
+		}
+	
