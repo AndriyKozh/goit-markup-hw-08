@@ -149,10 +149,10 @@ header.page-header {
 
 @media screen and (max-width: 767px) {
   .page-header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     height: 60px;
+  }
+  .page-header .container {
+    max-width: 450px;
   }
 }
 
@@ -352,17 +352,11 @@ header.page-header {
   padding-bottom: 200px;
   text-align: center;
   background-color: #C4C4C4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img (20).jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img (20).jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img(20).jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img(20).jpg");
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (min-width: 480px) {
-  .hero {
-    margin-top: 0;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -392,9 +386,30 @@ header.page-header {
 
 @media screen and (max-width: 767px) {
   .hero {
+    max-height: 400px;
     margin-top: 60px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/Headerimg@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Headerimg@2x.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
   }
 }
 
@@ -1420,6 +1435,7 @@ header.page-header {
 
 @media screen and (max-width: 767px) {
   .menu {
+    width: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1511,12 +1527,6 @@ header.page-header {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
-  .conteiner__item {
-    width: 450px;
-  }
-}
-
 .conteiner__link {
   display: block;
 }
@@ -1599,10 +1609,25 @@ header.page-header {
   opacity: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .conteiner__item {
+    width: 450px;
+  }
+  .conteiner__item img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .conteiner__item {
+    width: 354px;
+  }
+}
+
 .mobail__button {
   width: 40px;
   height: 40px;
-  position: fixed;
+  margin-left: auto;
   z-index: 999;
   right: 15px;
   top: 10px;
