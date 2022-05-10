@@ -259,6 +259,12 @@ header.page-header {
   color: #000000;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-right: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
@@ -650,11 +656,11 @@ header.page-header {
     font-size: 28px;
   }
   .team__item {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
   }
   .team__title {
-    width: 450px;
+    max-width: 450px;
   }
   .team {
     margin-bottom: -30px;
