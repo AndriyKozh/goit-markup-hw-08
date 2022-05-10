@@ -7,6 +7,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+body {
+  margin-left: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -386,20 +390,16 @@ header.page-header {
 
 @media screen and (max-width: 767px) {
   .hero {
-    max-height: 400px;
     margin-top: 60px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    max-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    height: 400px;
   }
 }
 
