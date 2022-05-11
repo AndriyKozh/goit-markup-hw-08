@@ -58,13 +58,13 @@
 		
 	  @media (min-width: 1200px) {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("../images/Img(20).jpg");
+			url("../images/HeaderDesctop.jpg");
 		
 		@media (min-device-pixel-ratio: 2),
 		(min-resilution: 192dpi),
 		(min-resolution: 2dppx) {
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-				url("../images/Headerimg@2x.jpg");
+				url("../images/HeaderDesctop@2x.jpg");
 	}
 }
 		background-position: center;
