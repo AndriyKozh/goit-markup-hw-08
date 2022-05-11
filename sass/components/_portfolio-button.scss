@@ -1,18 +1,18 @@
 .menu {
-
+	display: flex;
+	justify-content: center;
+	padding-top: 174px;
 @media screen and (max-width: 767px) {
-	width: 100%;
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: start;
 	}
-		@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
 			display: flex;
 			padding-top: 120px;
 		}
-	display: flex;
-	justify-content: center;
-	padding-top: 174px;
+
 }
 
 .menu__item {

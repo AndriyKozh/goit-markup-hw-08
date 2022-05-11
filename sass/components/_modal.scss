@@ -40,14 +40,9 @@
 	@media screen and (min-width: 480px) and (max-width: 1199px) {
 			width: 450px;
 		}
-
-	// @media screen and (max-width: 1199px){
-	// width: 450px;
-
-	// }
-				@media screen and (min-width: 1200px) {
-					max-width: 528px;
-				}
+	@media screen and (min-width: 1200px) {
+			max-width: 528px;
+	}
 }
 
 
