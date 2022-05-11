@@ -44,8 +44,11 @@
 @media screen and (max-width: 768px) {
 	flex-wrap: wrap;
 	margin: -15px;
+	// max-width: 100%;
+	
+	
 	.clients__item{
-		width: 210px;
+		width: calc(100% / 2 - 30px);
 	}
 
 }
