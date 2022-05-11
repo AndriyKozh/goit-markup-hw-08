@@ -34,25 +34,25 @@
 	}
 			    @media (max-width: 767px) {
 			    	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			    		url("../images/Img(20).jpg");
+			    		url("../images/HeaderMobail.jpg");
 		
 			    	@media (min-device-pixel-ratio: 2),
 			    	(min-resolution: 192dpi),
 			    	(min-resolution: 2dppx) {
 			    		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			    			url("../images/Headerimg@2x.jpg");
+			    			url("../images/HeaderMobail@2x.jpg");
 			    	}
 			    }
 		
 			    @media (min-width: 768px) {
 			    	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			    		url("../images/Img(20).jpg");
+			    		url("../images/HeaderTablet.jpg");
 		
 			    	@media (min-device-pixel-ratio: 2),
 			    	(min-resolution: 192dpi),
 			    	(min-resolution: 2dppx) {
 			    		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			    			url("../images/Headerimg@2x.jpg");
+			    			url("../images/HeaderTablet@2x.jpg");
 			    	}
 			    }
 		
@@ -68,9 +68,8 @@
 			    	}
 }
 		background-position: center;
-	
 		background-size: cover;
- @media screen and (max-width: 767px) {
+		 @media screen and (max-width: 767px) {
 	// 	background-image: linear-gradient(to right,
 	// 		rgba(47, 48, 58, 0.4),
 	// 		rgba(47, 48, 58, 0.4)),

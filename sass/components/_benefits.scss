@@ -2,7 +2,7 @@
 
 	.benefits__block {
 		@include img__center();
-		// width: 270px;
+		
 		height: 120px;
 		margin: auto;
 		margin-bottom: 30px;
@@ -28,7 +28,7 @@
 	}
 	
 	.benefits__text {
-		// width: 270px;
+	
 		font-size: 14px;
 		line-height: 1.71;
 		letter-spacing: 0.03em;
