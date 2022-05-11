@@ -109,7 +109,7 @@ margin-bottom: 32px;
 	
 	font-weight: 500;
 	font-size: 34px;
-	line-height: 40px;	
+	line-height: 1.17;	
 	letter-spacing: 0.02em;
 	color: $accent-color;
 }
@@ -117,13 +117,14 @@ margin-bottom: 32px;
 .mobail-contact__link-mail{
 	font-weight: 500;
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 1.16;
 	letter-spacing: 0.02em;
 	color: $color-fone;
 }
 
 .mobail-soc {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	justify-content: start;
 	text-align: center;
@@ -131,15 +132,24 @@ margin-bottom: 32px;
 }
 
 .mobail-soc__link {
+	display: block;
+	
 	font-weight: 500;
 		font-size: 18px;
-		line-height: 22px;
+		line-height: 1.22;
 		letter-spacing: 0.02em;
 		color: $accent-color;
+		padding-right: 10px;
+	border-right: 1px solid rgba(33, 33, 33, 0.2);
+	padding-right: 10px;
+	margin-right: 10px;
+&:last-child{
+	border-right: none;
 }
-
-.mobail-soc__line {
-	padding: 0 10px 0 10px;
-	color: $accent-color-text;
+&:last-child {
+	margin-right: 0;
+	padding-right: 0;
 }
+	
+	}
 

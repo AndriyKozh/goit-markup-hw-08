@@ -1,6 +1,5 @@
 .menu {
-	margin-right: 8px;
-	
+
 @media screen and (max-width: 767px) {
 	width: 100%;
 		display: flex;
@@ -17,6 +16,10 @@
 }
 
 .menu__item {
+	margin-right: 8px;
+	&:last-child{
+		margin-right: 0;
+	}
 	@media screen and (max-width: 767px){
 		margin-bottom: 15px;
 		margin-right: 8px;
@@ -33,6 +36,7 @@
 }
 
 .menu__button {
+	
 	padding: 6px 22px;
 	font-family: Roboto, sans-serif;
 	background-color: $color-text-button;
@@ -57,6 +61,8 @@
 		color: $color-text;
 		border: 1px solid #2196f3;
 	}
-
+}
+.menu__button:last-child{
+	margin-right: 0;
 }
 
