@@ -1728,6 +1728,7 @@ header.page-header {
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
