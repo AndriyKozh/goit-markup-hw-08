@@ -2,7 +2,8 @@
 	const refs = {
 	  openModalBtn: document.querySelector("[data-modal-open]"),
 	  closeModalBtn: document.querySelector("[data-modal-close]"),
-	  modal: document.querySelector("[data-modal]"),
+		modal: document.querySelector("[data-modal]"),
+	
 	};
   
 	refs.openModalBtn.addEventListener("click", toggleModal);
@@ -10,7 +11,8 @@
   
 	function toggleModal() {
 		document.body.classList.toggle('modal-open')
-	  refs.modal.classList.toggle("is-hidden");
+		refs.modal.classList.toggle("is-hidden");
+		
 	}
   })();
 
@@ -33,6 +35,7 @@
         const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
         menuBtnRef.classList.toggle("is-open");
         menuBtnRef.setAttribute("aria-expanded", !expanded);
-        mobileMenuRef.classList.toggle("is-open");
+		mobileMenuRef.classList.toggle("is-open");
+		
     });
 })();

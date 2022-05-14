@@ -16,7 +16,7 @@
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body class="body">
     <!--Шапка сайта-->
 
     <header class="page-header">
@@ -236,11 +236,22 @@
 
           <ul class="team">
             <li class="team__item list">
-              <img
-                srcset="./images/img(3).jpg 1x, ./images/img@2x.jpg 2x"
-                src="./images/img(3).jpg"
-                alt="Product Designer"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/desktop1x1.jpg 1x, ./images/desktop/desktop1x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/1tablet.jpg 1x, ./images/tablet/1tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobail/1mobail.jpg 1x, ./images/mobail/1mobail@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mobail/1mobail.jpg" alt="" />
+              </picture>
+
               <div class="team__block">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -278,11 +289,21 @@
             </li>
 
             <li class="team__item list">
-              <img
-                srcset="./images/img(4).jpg 1x, ./images/img2@2x.jpg 2x"
-                src="./images/img(4).jpg"
-                alt="Frontend Developer"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/desktop2x1.jpg 1x, ./images/desktop/desktop2x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/2tablet.jpg 1x, ./images/tablet/2tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobail/2mobail.jpg 1x, ./images/mobail/2mobail@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mobail/2mobail.jpg" alt="" />
+              </picture>
               <div class="team__block">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -320,11 +341,21 @@
             </li>
 
             <li class="team__item list">
-              <img
-                srcset="./images/img(5).jpg 1x, ./images/img3@2x.jpg 2x"
-                src="./images/img(5).jpg"
-                alt="Marketing"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/desktop3x1.jpg 1x, ./images/desktop/desktop3x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/3tablet.jpg 1x, ./images/tablet/1tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobail/3mobail.jpg 1x, ./images/mobail/3mobail@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mobail/3mobail.jpg" alt="" />
+              </picture>
               <div class="team__block">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -362,11 +393,21 @@
             </li>
 
             <li class="team__item list">
-              <img
-                srcset="./images/img(6).jpg 1x, ./images/img4@2x.jpg 2x"
-                src="./images/img(6).jpg"
-                alt="UI Designer"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/desktop4x1.jpg 1x, ./images/desktop/desktop4x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/4tablet.jpg 1x, ./images/tablet/4tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobail/4mobail.jpg 1x, ./images/mobail/4mobail@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mobail/4mobail.jpg" alt="" />
+              </picture>
               <div class="team__block">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>

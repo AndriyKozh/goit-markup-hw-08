@@ -23,7 +23,7 @@
       <div class="container line-up">
         <!-- Nav -->
         <a class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
-        <div class="menu__conteiner">
+        <div class="menu__conteiner is-open">
           <nav class="page-header__nav">
             <ul class="site-nav">
               <li class="site-nav__item">
@@ -38,6 +38,8 @@
             </ul>
           </nav>
 
+          <!-- Button close -->
+
           <button
             class="mobail__button is-open"
             type="button"
@@ -45,7 +47,7 @@
             aria-controls="mobail__conteiner"
             data-menu-button
           >
-            <svg width="18" height="18" aria-label="перемикач мобільного меню">
+            <svg width="24" height="16" aria-label="перемикач мобільного меню">
               <use class="mobail__close" href="./images/x-mobail.svg#icon-close_24px"></use>
               <use class="mobail__burger" href="./images/burger.svg#icon-menu_24px"></use>
             </svg>
@@ -74,19 +76,18 @@
             <ul class="mobail-soc">
               <li class="mobail-soc__item">
                 <a class="mobail-soc__link" href="#">Instagram</a
-                ><span class="mobail-soc__line">|</span>
+                ><span class="mobail-soc__line"></span>
               </li>
               <li class="mobail-soc__item">
                 <a class="mobail-soc__link" href="#">Twitter</a
-                ><span class="mobail-soc__line">|</span>
+                ><span class="mobail-soc__line"></span>
               </li>
               <li class="mobail-soc__item">
                 <a class="mobail-soc__link" href="#">Facebook</a
-                ><span class="mobail-soc__line">|</span>
+                ><span class="mobail-soc__line"></span>
               </li>
               <li class="mobail-soc__item">
-                <a class="mobail-soc__link" href="#">LinkedIn</a
-                ><span class="mobail-soc__line"></span>
+                <a class="mobail-soc__link" href="#">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -142,13 +143,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(7).jpg 1x, ./images/img7@2x.jpg 2x"
-                    src="./images/img(7).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(7).jpg 1x, ./images/img7@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet1.jpg    1x,
+                        ./images/port-tablet/port-tablet1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile1.jpg    1x,
+                        ./images/port-mobile/port-mobile1@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile1.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -157,7 +172,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="conteiner__info">
+                <div class="conteiner__info conteiner__info--height">
                   <h2 class="info__titl">Технокряк</h2>
                   <p class="info__text">Веб-сайт</p>
                 </div>
@@ -167,13 +182,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(8).jpg 1x, ./images/img8@2x.jpg 2x"
-                    src="./images/img(8).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(8).jpg 1x, ./images/img8@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet2.jpg    1x,
+                        ./images/port-tablet/port-tablet2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile2.jpg    1x,
+                        ./images/port-mobile/port-mobile2@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile2.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -192,13 +221,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(9).jpg 1x, ./images/img9@2x.jpg 2x"
-                    src="./images/img(9).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(9).jpg 1x, ./images/img9@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet3.jpg    1x,
+                        ./images/port-tablet/port-tablet3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile3.jpg    1x,
+                        ./images/port-mobile/port-mobile3@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile3.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -217,13 +260,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(10).jpg 1x, ./images/img10@2x.jpg 2x"
-                    src="./images/img(10).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(10).jpg 1x, ./images/img10@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet4.jpg    1x,
+                        ./images/port-tablet/port-tablet4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile4.jpg    1x,
+                        ./images/port-mobile/port-mobile4@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile4.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -242,13 +299,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(11).jpg 1x, ./images/img11@2x.jpg 2x"
-                    src="./images/img(11).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(11).jpg 1x, ./images/img11@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet5.jpg    1x,
+                        ./images/port-tablet/port-tablet5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile5.jpg    1x,
+                        ./images/port-mobile/port-mobile5@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile5.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -267,13 +338,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(12).jpg 1x, ./images/img12@2x.jpg 2x"
-                    src="./images/img(12).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(12).jpg 1x, ./images/img12@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet6.jpg    1x,
+                        ./images/port-tablet/port-tablet6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile6.jpg    1x,
+                        ./images/port-mobile/port-mobile6@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile6.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -292,13 +377,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(13).jpg 1x, ./images/img13@2x.jpg 2x"
-                    src="./images/img(13).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(13).jpg 1x, ./images/img13@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet7.jpg    1x,
+                        ./images/port-tablet/port-tablet7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile7.jpg    1x,
+                        ./images/port-mobile/port-mobile7@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile7.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -317,13 +416,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(14).jpg 1x, ./images/img14@2x.jpg 2x"
-                    src="./images/img(14).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(14).jpg 1x, ./images/img14@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet8.jpg    1x,
+                        ./images/port-tablet/port-tablet8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile8.jpg    1x,
+                        ./images/port-mobile/port-mobile8@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile8.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -342,13 +455,27 @@
             <li class="conteiner__item list">
               <a class="conteiner__link" href="#"
                 ><div class="conteiner__block">
-                  <img
-                    srcset="./images/img(15).jpg 1x, ./images/img15@2x.jpg 2x"
-                    src="./images/img(15).jpg"
-                    alt="вебсайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img(15).jpg 1x, ./images/img15@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-tablet/port-tablet9.jpg    1x,
+                        ./images/port-tablet/port-tablet9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port-mobile/port-mobile9.jpg    1x,
+                        ./images/port-mobile/port-mobile9@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/port-mobile/port-mobile9.jpg" alt="" />
+                  </picture>
                   <div class="conteiner__overlay">
                     <p class="conteiner__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -443,7 +570,7 @@
         <div class="footer__form">
           <h2 class="social__title">Подпишитесь на рассылку</h2>
           <form class="js-speaker-form">
-            <label for="mail"></label>
+            <label id="mail"></label>
             <input
               class="form__email"
               placeholder="   E-mail"
