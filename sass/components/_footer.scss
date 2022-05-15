@@ -12,7 +12,7 @@
 	.footer__tablet{
 		align-items: baseline;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 	}
 }
 
@@ -29,14 +29,16 @@
 	.footer__tablet{
 		align-items: baseline;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		.social__title {
 			text-transform: uppercase;
-			.social__title{
-				
-			}
 			
 		}
 	}
+}
+}
+@media screen and (max-width: 1199px) {
+	.footer__tablet{
+	margin-bottom: 60px;
 }
 }

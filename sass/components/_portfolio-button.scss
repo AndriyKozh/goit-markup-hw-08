@@ -1,21 +1,20 @@
 .menu {
 	display: flex;
 	justify-content: center;
+	
 @media screen and (max-width: 767px) {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: start;
-		padding-top: 120px;
+		margin-bottom: 40px;
 	}
-				@media screen and (min-width:768px) {
-					
-					padding-top: 150px;
-				}
-								@media screen and (min-width:1199px) {
-									
-									padding-top: 174px;
-								}
+@media screen and (min-width: 768px){
+margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px){
+margin-bottom: 50px;
+}
 }
 
 .menu__item {
